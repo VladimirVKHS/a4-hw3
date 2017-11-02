@@ -17,6 +17,7 @@ export class FloatInputDirective implements AfterContentInit{
   public ngAfterContentInit() {
     this._input = this.elementRef.nativeElement.querySelector('input');
     this._label = this.elementRef.nativeElement.querySelector('label');
+    (this._input['value'] == '') ? this._label.classList.remove('active') : this._label.classList.add('active');
 
     this._input.addEventListener('focus', this.inputFocus.bind(this));
     this._input.addEventListener('blur', this.inputBlur.bind(this));
