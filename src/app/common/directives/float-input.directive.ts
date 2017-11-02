@@ -1,13 +1,11 @@
 import {AfterContentInit, Directive, ElementRef, ViewChild} from '@angular/core';
-import {DomAdapter} from "@angular/platform-browser/src/dom/dom_adapter";
-
 
 @Directive({
   selector: '[appFloatInput]'
 })
 export class FloatInputDirective implements AfterContentInit{
 
-  public _label: Element;
+  private _label: Element;
   private _input: Element;
 
   constructor(
