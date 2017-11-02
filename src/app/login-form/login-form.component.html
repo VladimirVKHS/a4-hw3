@@ -12,30 +12,30 @@
       <form [formGroup]="signupForm">
 
         <div class="top-row">
-          <div class="field-wrap">
-            <label class="active">
+          <div class="field-wrap" appFloatInput>
+            <label>
               First Name<span class="req">*</span>
             </label>
             <input name="firstname" formControlName="firstname" type="text" autocomplete="off" />
           </div>
 
-          <div class="field-wrap">
-            <label class="active">
+          <div class="field-wrap" appFloatInput>
+            <label>
               Last Name<span class="req">*</span>
             </label>
             <input name="lastname" formControlName="lastname"type="text" autocomplete="off"/>
           </div>
         </div>
 
-        <div class="field-wrap">
-          <label class="active">
+        <div class="field-wrap" appFloatInput>
+          <label>
             Email Address<span class="req">*</span>
           </label>
           <input name="email" formControlName="email" type="email" autocomplete="off"/>
         </div>
 
-        <div class="field-wrap">
-          <label class="active">
+        <div class="field-wrap" appFloatInput>
+          <label>
             Set A Password<span class="req">*</span>
           </label>
           <input name="password" formControlName="password" type="password" autocomplete="off"/>
@@ -52,15 +52,15 @@
 
       <form [formGroup]="loginForm">
 
-        <div class="field-wrap">
-          <label class="active">
+        <div class="field-wrap" appFloatInput>
+          <label>
             Email Address<span class="req">*</span>
           </label>
           <input name="email" formControlName="email" type="email" autocomplete="off"/>
         </div>
 
-        <div class="field-wrap">
-          <label class="active">
+        <div class="field-wrap" appFloatInput>
+          <label>
             Password<span class="req">*</span>
           </label>
           <input name="password" formControlName="password" type="password" autocomplete="off"/>
